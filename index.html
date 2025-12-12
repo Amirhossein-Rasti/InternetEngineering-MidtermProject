@@ -1,31 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <title>شرکت آدلین آذر فناور</title>
-  </head>
-  <body>
-    <div id="app" class="w-full h-screen pt-4 bg-gray-100">
-      <nav class="w-[96%] mx-auto py-3 px-2 rounded-lg bg-white">
-        <div class="flex justify-between px-6">
-          <div class="text-lg self-center">
-            لوگو
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>شرکت آدلین آذر فناور</title>
+</head>
+
+<body>
+  <div id="app" class="w-full h-screen pt-4 bg-gray-100">
+    <!-- Navbar -->
+    <nav class="w-[96%] mx-auto py-3 px-2 rounded-lg bg-white">
+      <div class="flex justify-between sm:px-6 px-3">
+        <div class="text-lg self-center flex gap-2 justify-center items-center cursor-pointer">
+          <img src="./public/img/logo.png" alt="log" class="w-10">
+          <p class="font-dana-bold"><a href="#">آدلین آذرفناور</a></p>
+        </div>
+        <div class="hidden sm:flex gap-14">
+          <a href="#" class="font-dana-bold text-lg">محصولات/خدمات</a>
+          <a href="#" class="font-dana-bold text-lg">درباره ما</a>
+          <a href="#" class="font-dana-bold text-lg">تماس باما</a>
+        </div>
+        <div class="sm:hidden block">
+          <button type="button" class="p-2 bg-gray-100 rounded-lg cursor-pointer">
+            <img src="./public/img/material-symbols--menu-rounded.svg" alt="منو">
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Slider -->
+    <div class="w-[96%] h-fit mx-auto my-2 rounded-lg relative">
+      <div id="my-keen-slider" class="keen-slider rounded-lg">
+        <div class="keen-slider__slide number-slide1">
+          <div class="w-full h-full bg-[rgba(0,0,0,.5)] flex flex-col justify-center items-center gap-5">
+            <img src="./public/img/logo.png" alt="logo" class="w-72">
+            <h1 class="font-dana-exBold text-white text-4xl">شرکت آدلین آذر فناور</h1>
+            <h2 class="text-3xl font-dana-bold">فناوری در خدمت پیشرفت شما</h2>
           </div>
-          <div class="hidden sm:flex gap-16">
-            <a href="#" class="font-dana-bold text-lg">محصولات/خدمات</a>
-            <a href="#" class="font-dana-bold text-lg">درباره ما</a>
-            <a href="#" class="font-dana-bold text-lg">تماس باما</a>
+        </div>
+        <div class="keen-slider__slide number-slide2">
+          <div class="w-full h-full bg-[rgba(0,0,0,.5)] flex flex-col justify-center items-center gap-8 text-center">
+            <h4 class="text-3xl md:text-5xl">پیشگام در ارائه محصولات نرم افزاری در سراسر کشور</h4>
+            <h6 class="text-xl md:text-2xl">ساخت سیستم های مدیریتی برای سازمان های دولتی و خصوصی</h6>
           </div>
-          <div class="sm:hidden block">
-            <button type="button" class="p-2 bg-gray-100 rounded-lg cursor-pointer">
-              <img src="./public/img/material-symbols--menu-rounded.svg" alt="منو">
+        </div>
+        <div class="keen-slider__slide number-slide3">
+          <div class="w-full h-full bg-[rgba(0,0,0,.5)] flex flex-col justify-center items-center gap-8">
+            <h4 class="text-5xl">محیطی دوستانه و فنی</h4>
+            <h6 class="text-2xl">با حضور بیش از ۳۰ مهندس نرم افزار</h6>
+          </div>
+        </div>
+      </div>
+      <!-- Searchbar -->
+      <div class="w-full h-8 absolute flex justify-center items-center -bottom-3">
+        <div
+          class="w-fit sm:w-100 bg-gray-200 flex justify-between items-center flex-col gap-2 sm:gap-0  sm:flex-row py-3 px-6 rounded-lg sm:px-3">
+          <label for="search" class="font-dana-med text-sm text-nowrap">دنبال چیزی میگردی؟</label>
+          <div class="relative">
+            <input type="text" class="w-60 p-2 bg-white rounded-lg h-full right-0">
+            <button type="button" class="absolute top-1 left-1 bg-gray-100 p-1 rounded-full cursor-pointer">
+              <img src="./public/img/material-symbols--search-rounded.svg" alt="جستجو">
             </button>
           </div>
         </div>
-      </nav>
+      </div>
+      <!-- End Searchbar -->
+    </div>
+    <!-- End Slider -->
     <script type="module" src="/src/main.ts"></script>
-  </body>
+</body>
+
 </html>

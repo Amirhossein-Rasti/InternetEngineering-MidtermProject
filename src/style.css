@@ -1,27 +1,54 @@
 @import "tailwindcss";
 @font-face {
-  font-family: danaMed;
-  src: url(./../public/fonts/dana-medium.woff);
+    font-family: danaMed;
+    src: url(./../public/fonts/dana-medium.woff);
 }
 @font-face {
-  font-family: danaBold;
-  src: url(./../public/fonts/dana-bold.woff);
+    font-family: danaBold;
+    src: url(./../public/fonts/dana-bold.woff);
 }
 @font-face {
-  font-family: danaExBold;
-  src: url(./../public/fonts/dana-extrabold.woff);
+    font-family: danaExBold;
+    src: url(./../public/fonts/dana-extrabold.woff);
 }
 @font-face {
-  font-family: danaLight;
-  src: url(./../public/fonts/dana-light.woff);
+    font-family: danaLight;
+    src: url(./../public/fonts/dana-light.woff);
 }
-@theme{
-  --font-dana-med: danaMed;
-  --font-dana-light: danaLight;
-  --font-dana-bold: danaBold;
-  --font-dana-exBold: danaExBold
+@theme {
+    --font-dana-med: danaMed;
+    --font-dana-light: danaLight;
+    --font-dana-bold: danaBold;
+    --font-dana-exBold: danaExBold;
 }
-body{
-  direction: rtl;
-  font-family: danaMed;
+body {
+    direction: rtl;
+    font-family: danaMed;
+}
+[class^="number-slide"],
+[class*=" number-slide"] {
+    background: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    height: 500px;
+    max-height: 100vh;
+}
+
+.number-slide1 {
+    background-image: url("./../public/img/slide1.jpg");
+    background-size: 100% 500px;
+}
+
+.number-slide2 {
+    background-image: url("./../public/img/slider4.jpg");
+    background-size: 100% 500px;
+}
+
+.number-slide3 {
+    background-image: url("./../public/img/slider3.webp");
+    background-size: 100% 500px;
 }

@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
+    "keen-slider": "^6.8.6",
     "tailwindcss": "^4.1.18"
   }
 }
