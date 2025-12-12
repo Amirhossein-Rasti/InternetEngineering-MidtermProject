@@ -1,1 +1,27 @@
 @import "tailwindcss";
+@font-face {
+  font-family: danaMed;
+  src: url(./../public/fonts/dana-medium.woff);
+}
+@font-face {
+  font-family: danaBold;
+  src: url(./../public/fonts/dana-bold.woff);
+}
+@font-face {
+  font-family: danaExBold;
+  src: url(./../public/fonts/dana-extrabold.woff);
+}
+@font-face {
+  font-family: danaLight;
+  src: url(./../public/fonts/dana-light.woff);
+}
+@theme{
+  --font-dana-med: danaMed;
+  --font-dana-light: danaLight;
+  --font-dana-bold: danaBold;
+  --font-dana-exBold: danaExBold
+}
+*{
+  direction: rtl;
+  @apply font-dana-light;
+}
