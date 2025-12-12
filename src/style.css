@@ -21,7 +21,7 @@
   --font-dana-bold: danaBold;
   --font-dana-exBold: danaExBold
 }
-*{
+body{
   direction: rtl;
-  @apply font-dana-light;
+  font-family: danaMed;
 }
