@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         loop: true,
         mode: "free-snap",
         slides: {
-            perView: 3,
+            perView: 2,
             spacing: 15,
         },
     }); //Second slider
