@@ -52,3 +52,6 @@ body {
     background-image: url("./../public/img/slider3.webp");
     background-size: 100% 500px;
 }
+.service-card{
+    @apply w-80 h-64 bg-white rounded-lg flex flex-col justify-around items-center gap-3 p-6 transition-all hover:scale-110 border border-gray-200;
+}
