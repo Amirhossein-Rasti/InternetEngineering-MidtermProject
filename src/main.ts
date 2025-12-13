@@ -2,8 +2,8 @@ import "keen-slider/keen-slider.min.css";
 import KeenSlider from "keen-slider";
 
 document.addEventListener("DOMContentLoaded", () => {
-    const slider = new KeenSlider(
-        "#my-keen-slider",
+    const slider1 = new KeenSlider(
+        "#keen-slider1",
         {
             loop: true,
         },
@@ -39,6 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
         ]
     ); //First slider
 
+    var slider2 = new KeenSlider("#keen-slider2", {
+        loop: true,
+        mode: "free-snap",
+        slides: {
+            perView: 3,
+            spacing: 15,
+        },
+    }); //Second slider
+
     const counterSection = document.getElementById("counterSection");
     const workHours = document.getElementById("work-hours");
     const successfulProject = document.getElementById("successful-project");
@@ -73,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         },
         {
-            threshold: 0.7
+            threshold: 0.7,
         }
     );
     observer.observe(counterSection!);
