@@ -31,6 +31,34 @@
                 class="w-full p-2 text-white cursor-pointer disabled:cursor-not-allowed disabled:opacity-75 transition-all bg-teal-400 hover:bg-teal-500 rounded-lg border-2 border-black">ورود</button>
         </div>
     </div>
+    <script>
+        const users = [
+            { username: "user1", password: "1234", rememberMe: false },
+            { username: "user2", password: "1234", rememberMe: true },
+            { username: "user3", password: "1234", rememberMe: false },
+        ];
+
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
+        const hint = document.getElementById("hint");
+
+        document.getElementById("submitBtn")?.addEventListener("click", login);
+
+        function login() {
+            const user = users.find((user) => {
+                return user.username == usernameInput.value && user.password == passwordInput.value;
+            });
+            if (user) {
+                window.open("/index.html");
+            } else {
+                hint.classList.remove("hidden");
+                setTimeout(() => {
+                    hint.classList.add("hidden");
+                }, 3000);
+            }
+        }
+
+    </script>
     <script src="/src/login.ts"></script>
 </body>
 
