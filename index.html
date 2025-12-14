@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/InternetEngineering-MidtermProject/img/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شرکت نرم افزاری آدلین آذر فناور</title>
+  <script type="module" crossorigin src="/InternetEngineering-MidtermProject/assets/index-CrECrJvj.js"></script>
+  <link rel="stylesheet" crossorigin href="/InternetEngineering-MidtermProject/assets/index-DH6hoqmy.css">
+</head>
+
+<body>
+  <div id="app" class="w-full h-screen pt-4 bg-gray-100 overflow-y-scroll">
+    <!-- Navbar -->
+    <nav class="w-[96%] mx-auto py-3 px-2 rounded-lg bg-white">
+      <div class="flex justify-between sm:px-6 px-3">
+        <div class="text-lg self-center flex gap-2 justify-center items-center cursor-pointer">
+          <img src="/InternetEngineering-MidtermProject/img/logo.png" alt="لوگو" class="w-10">
+          <p class="font-dana-bold max-md:text-sm"><a href="#">شرکت آدلین آذر فناور</a></p>
+        </div>
+        <div class="hidden sm:flex items-center gap-8 max-md:gap-4">
+          <a href="#services" class="font-dana-bold text-lg max-md:text-sm">محصولات/خدمات</a>
+          <a href="#about" class="font-dana-bold text-lg max-md:text-sm">درباره ما</a>
+          <a href="#communication" class="font-dana-bold text-lg max-md:text-sm">تماس باما</a>
+          <button type="button" id="loginPageBtn"
+            class="p-2 text-white bg-blue-800 font-bold max-md:text-sm rounded-lg border border-black cursor-pointer">ورود
+            به
+            پنل</button>
+        </div>
+        <div class="sm:hidden block">
+          <button type="button" class="p-2 bg-gray-100 rounded-lg cursor-pointer">
+            <img src="/InternetEngineering-MidtermProject/img/material-symbols--menu-rounded.svg" alt="منو">
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Slider -->
+    <div class="w-[96%] h-fit mx-auto my-2 rounded-lg relative">
+      <div id="keen-slider1" class="keen-slider rounded-lg">
+        <div class="keen-slider__slide number-slide1">
+          <div class="w-full h-full bg-[rgba(0,0,0,.5)] flex flex-col justify-center items-center gap-5">
+            <img src="/InternetEngineering-MidtermProject/img/logo.png" alt="لوگو" class="w-72">
+            <h1 class="font-dana-exBold text-white  text-3xl md:text-4xl">شرکت آدلین آذر فناور</h1>
+            <h2 class="text-xl md:text-3xl font-dana-bold">فناوری در خدمت پیشرفت شما</h2>
+          </div>
+        </div>
+        <div class="keen-slider__slide number-slide2">
+          <div class="w-full h-full bg-[rgba(0,0,0,.5)] flex flex-col justify-center items-center gap-8 text-center">
+            <h4 class="text-xl sm:text-3xl md:text-5xl mx-8">پیشگام در ارائه محصولات نرم افزاری در سراسر کشور</h4>
+            <h6 class="text-xs sm:text-xl md:text-2xl mx-6">ساخت سیستم های مدیریتی برای سازمان های دولتی و خصوصی</h6>
+          </div>
+        </div>
+        <div class="keen-slider__slide number-slide3">
+          <div class="w-full h-full bg-[rgba(0,0,0,.5)] flex flex-col justify-center items-center gap-8">
+            <h4 class="text-4xl sm:text-5xl">محیطی دوستانه و فنی</h4>
+            <h6 class="text-lg sm:text-2xl">با حضور بیش از ۳۰ مهندس نرم افزار</h6>
+          </div>
+        </div>
+      </div>
+      <!-- Searchbar -->
+      <div class="w-full h-8 absolute flex justify-center items-center -bottom-3">
+        <div
+          class="w-fit sm:w-110 bg-gray-200 flex justify-between items-center flex-col gap-2 sm:gap-0  sm:flex-row  py-3 px-6 rounded-lg sm:px-3">
+          <label for="search" class="font-dana-bold text-lg sm:text-sm text-nowrap">دنبال چیزی میگردی؟</label>
+          <div class="relative">
+            <input id="search" type="text" class="w-72 p-2 bg-white rounded-lg h-full right-0">
+            <button id="searchBtn" type="button" class="absolute top-1 left-1 bg-gray-100 p-1 rounded-full">
+              <img src="/InternetEngineering-MidtermProject/img/material-symbols--search-rounded.svg" alt="جستجو">
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- End Searchbar -->
+    </div>
+    <!-- End Slider -->
+    <!-- Services -->
+    <div class="w-[96%] h-fit mx-auto my-2 rounded-lg mt-16">
+      <h4 class="header" id="services">خدمات شرکت ما</h4>
+      <div class="w-full h-fit flex flex-wrap justify-center items-center gap-10 2xl:gap-20 p-8">
+        <div class="service-card">
+          <div>
+            <img src="/InternetEngineering-MidtermProject/img/gif-shop-web.gif" alt="طراحی وب سایت و فروشگاه">
+          </div>
+          <p class="font-dana-bold text-center">طراحی وب سایت و فروشگاه</p>
+          <p class="text-center text-gray-500 font-dana-light">راه‌اندازی سایت اولین قدم برای رشد کسب‌وکارها است. با
+            طراحی سایت اصولی از رقبا پیشی
+            بگیرید.</p>
+        </div>
+        <div class="service-card">
+          <div>
+            <img src="/InternetEngineering-MidtermProject/img/gif-design.gif" alt="طراحی رابط کاربری (UI/UX)">
+          </div>
+          <p class="font-dana-bold text-center">طراحی رابط کاربری (UI/UX)</p>
+          <p class="text-center text-gray-500 font-dana-light">طراحی رابط کاربری UI/UX بهترین نقشه راه برای طراحی یک
+            سایت جذاب با تجربه کاربری بالا
+            است.</p>
+        </div>
+        <div class="service-card">
+          <div>
+            <img src="/InternetEngineering-MidtermProject/img/gif-seo.gif" alt="بهینه سازی و SEO">
+          </div>
+          <p class="font-dana-bold text-center">بهینه سازی و SEO</p>
+          <p class="text-center text-gray-500 font-dana-light">با رعایت اصول سئو در طراحی سایت می‌توانید در مدت‌زمان
+            کوتاهی رتبه یک گوگل را از آن خود
+            کنید.</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+    <!-- About -->
+    <div class="w-[96%] h-fit mx-auto rounded-lg mt-16 space-y-6" id="about">
+      <h4 class="header">درباره شرکت ما</h4>
+      <p class="text-lg text-center px-3 text-gray-500 font-dana-light">در آدلین آذر فناور، تیمی متشکل از متخصصان
+        نرم‌افزار، تحلیلگران سیستم و طراحان خلاق گرد هم آمده‌اند تا
+        راهکارهایی متناسب با نیازهای واقعی سازمان‌ها و کاربران ارائه دهند. تمرکز ما بر طراحی و پیاده‌سازی نرم‌افزارهای
+        امن، مقیاس‌پذیر و کاربرپسند است که بتوانند همراه مطمئنی برای رشد کسب‌وکارها باشند.ما با بهره‌گیری از فناوری‌های
+        روز دنیا و رویکردی منعطف، در زمینه‌هایی مانند طراحی نرم‌افزارهای سازمانی، سامانه‌های تحت وب، اپلیکیشن‌های موبایل
+        و راهکارهای اختصاصی فعالیت می‌کنیم. تعهد به کیفیت، پشتیبانی مستمر و احترام به اعتماد مشتریان، از اصول بنیادین
+        آدلین آذر فناور به شمار می‌رود.</p>
+    </div>
+    <!-- End About -->
+    <!-- Clients -->
+    <div class="w-[96%] h-fit mx-auto rounded-lg mt-16 space-y-6">
+      <h4 class="header">برندهایی که به شرکت ما اعتماد کرده‌اند</h4>
+      <div class="grid 2xl:grid-cols-8 md:grid-cols-4 grid-cols-2  mx-auto w-3/4 gap-8 justify-items-center">
+        <img draggable="false" src="/InternetEngineering-MidtermProject/img/ortix-portfolio-qkz1asfuxj4ryjnvxvhm9pfbbonwatac7j9akpsx6o.webp"
+          alt="ortix-portfolio" title="ortix-portfolio">
+        <img draggable="false" src="/InternetEngineering-MidtermProject/img/portfolio-aradnuts-qlwd2dkuvl5qmdh1eobyhgjqtmttbiw761jvrp7fnk.webp"
+          alt="portfolio-aradnuts" title="portfolio-aradnuts">
+        <img draggable="false" src="/InternetEngineering-MidtermProject/img/portfolio-canpars-qlwd3oksday2qvkrs8nay4osiwe60e2s0i65rj9r0g.webp"
+          alt="portfolio-canpars" title="portfolio-canpars">
+        <img draggable="false" src="/InternetEngineering-MidtermProject/img/portfolio-khanehashtom-qlwd5idhnpg5bkx74136so323vduz7bzlju5cwk6ww.webp"
+          alt="portfolio-khanehashtom" title="portfolio-khanehashtom">
+        <img draggable="false" src="/InternetEngineering-MidtermProject/img/portfolio-parsproshat-qlwd7ir29y785k02dedgmntjujh4fwbbji2jb7kvls.webp"
+          alt="portfolio-parsproshat" title="portfolio-parsproshat">
+        <img draggable="false" src="/InternetEngineering-MidtermProject/img/portfolio-rayadaroo-qlwd9oro1760x6uqpu3hvm4t5isl6rx1i87u56d79c.webp"
+          alt="portfolio-rayadaroo" title="portfolio-rayadaroo">
+        <img draggable="false" src="/InternetEngineering-MidtermProject/img/tochal-portfolio-qkyzevln5g5z4sb5i0ozmcde8he762ohvefdc0hwqo.webp"
+          alt="tochal-portfolio" title="tochal-portfolio">
+        <img draggable="false" src="/InternetEngineering-MidtermProject/img/portfolio-tka-qlwdbn9k9ruj3y0ca6kikmcdpf5482owrx594xgoao.webp"
+          alt="portfolio-tka" title="portfolio-tka">
+      </div>
+    </div>
+    <!-- End Clients -->
+    <!-- Statistics  -->
+    <div class="w-[96%] h-fit mx-auto rounded-lg mt-16 space-y-6" id="counterSection">
+      <h4 class="header">آمارهای شرکت ما</h4>
+      <div class="grid grid-cols-1 md:grid-cols-3 md:gap-0 gap-8">
+        <div class="flex flex-col justify-center items-center gap-2">
+          <div class="flex gap-1">
+            <p class="text-3xl font-dana-bold" id="work-hours"></p>
+            <span class="text-3xl font-dana-bold">+</span>
+          </div>
+          <p class="text-xl text-gray-500">ساعت کار</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-2">
+          <div class="flex gap-1">
+            <p class="text-3xl font-dana-bold" id="successful-project"></p>
+            <span class="text-3xl font-dana-bold">+</span>
+          </div>
+          <p class="text-xl text-gray-500">پروژه موفق</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-2">
+          <div class="flex gap-1">
+            <p class="text-3xl font-dana-bold" id="satisfied-client"></p>
+            <span class="text-3xl font-dana-bold">+</span>
+          </div>
+          <p class="text-xl text-gray-500">مشتری رضایتمند</p>
+        </div>
+      </div>
+    </div>
+    <!-- ٍEnd Statistics -->
+    <!-- Team-->
+    <div class="w-[88%] h-fit mx-auto rounded-lg mt-16 space-y-6">
+      <h4 class="header">تیم ما</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center gap-6">
+        <div
+          class="border border-gray-400 flex flex-col w-56 rounded-lg gap-2 py-2 shadow-lg transition-all hover:shadow-2xl">
+          <div class="flex justify-center items-center">
+            <img src="/InternetEngineering-MidtermProject/img/Rasti.png" alt="امیرحسین راستی" class="rounded-full size-36 border-2">
+          </div>
+          <p class="text-xl text-center font-dana-bold">امیرحسین راستی</p>
+          <p class="text-gray-500 text-center font-dana-light">Frontend Developer</p>
+          <div class="grid grid-cols-3 w-fit gap-4 mx-auto">
+            <a href="https://www.linkedin.com/in/amirhossein-rasti" target="_blank">
+              <img src="/InternetEngineering-MidtermProject/img/devicon--linkedin.svg" alt="Linkedin" title="Linkedin"
+                class="transition-all grayscale-100 hover:grayscale-0  hover:scale-105">
+            </a>
+            <a href="mailto:amirhosseinrastiekbatani@gmail.com" target="_blank">
+              <img src="/InternetEngineering-MidtermProject/img/basil--gmail-outline.svg" alt="Email" title="Email"
+                class="transition-all grayscale-100 hover:grayscale-0 hover:scale-105">
+            </a>
+            <a href="https://github.com/Amirhossein-Rasti" target="_blank"><img src="/InternetEngineering-MidtermProject/img/mdi--github.svg" alt="GitHub" title="GitHub"
+                class="transition-all grayscale-100 hover:grayscale-0 hover:scale-105"></a>
+          </div>
+        </div>
+        <div
+          class="border border-gray-400 flex flex-col w-56 rounded-lg gap-2 py-2 shadow-lg transition-all hover:shadow-2xl">
+          <div class="flex justify-center items-center">
+            <img src="/InternetEngineering-MidtermProject/img/Mosavi.jpg" alt="امیرمحمد موسوی" class="rounded-full size-36 border-2">
+          </div>
+          <p class="text-xl text-center font-dana-bold">امیرمحمد موسوی</p>
+          <p class="text-gray-500 text-center font-dana-light">Backend Developer</p>
+          <div class="grid grid-cols-3 w-fit gap-4 mx-auto">
+            <a href="https://www.linkedin.com/in/amir-mohammad-mousavi-b6a0a731a" target="_blank">
+              <img src="/InternetEngineering-MidtermProject/img/devicon--linkedin.svg" alt="Linkedin" title="Linkedin"
+                class="transition-all grayscale-100 hover:grayscale-0  hover:scale-105">
+            </a>
+            <a href="mailto:mailto:mousaviamirmohammad3@gmail.com" target="_blank">
+              <img src="/InternetEngineering-MidtermProject/img/basil--gmail-outline.svg" alt="Email" title="Email"
+                class="transition-all grayscale-100 hover:grayscale-0 hover:scale-105">
+            </a>
+            <a href="https://github.com/am1383" target="_blank"><img src="/InternetEngineering-MidtermProject/img/mdi--github.svg" alt="GitHub"
+                title="GitHub" class="transition-all grayscale-100 hover:grayscale-0 hover:scale-105"></a>
+          </div>
+        </div>
+        <div
+          class="border border-gray-400 flex flex-col w-56 rounded-lg gap-2 py-2 shadow-lg transition-all hover:shadow-2xl">
+          <div class="flex justify-center items-center">
+            <img src="/InternetEngineering-MidtermProject/img/Babakhani.jpg" alt="رضا باباخانی" class="rounded-full size-36 border-2">
+          </div>
+          <p class="text-xl text-center font-dana-bold">رضا باباخانی</p>
+          <p class="text-gray-500 text-center font-dana-light">Database Developer</p>
+          <div class="grid grid-cols-3 w-fit gap-4 mx-auto">
+            <a href="#">
+              <img src="/InternetEngineering-MidtermProject/img/devicon--linkedin.svg" alt="Linkedin" title="Linkedin"
+                class="transition-all grayscale-100 hover:grayscale-0  hover:scale-105">
+            </a>
+            <a href="#">
+              <img src="/InternetEngineering-MidtermProject/img/basil--gmail-outline.svg" alt="Email" title="Email"
+                class="transition-all grayscale-100 hover:grayscale-0 hover:scale-105">
+            </a>
+            <a href="#"><img src="/InternetEngineering-MidtermProject/img/mdi--github.svg" alt="GitHub" title="GitHub"
+                class="transition-all grayscale-100 hover:grayscale-0 hover:scale-105"></a>
+          </div>
+        </div>
+        <div
+          class="border border-gray-400 flex flex-col w-56 rounded-lg gap-2 py-2 shadow-lg transition-all hover:shadow-2xl">
+          <div class="flex justify-center items-center">
+            <img src="/InternetEngineering-MidtermProject/img/noneProf.jpg" alt="شایان محمدیان" class="rounded-full size-36 border-2">
+          </div>
+          <p class="text-xl text-center font-dana-bold">شایان محمدیان</p>
+          <p class="text-gray-500 text-center font-dana-light">DevOps Engineer</p>
+          <div class="grid grid-cols-3 w-fit gap-4 mx-auto">
+            <a href="#">
+              <img src="/InternetEngineering-MidtermProject/img/devicon--linkedin.svg" alt="Linkedin" title="Linkedin"
+                class="transition-all grayscale-100 hover:grayscale-0  hover:scale-105">
+            </a>
+            <a href="mailto:mailto:shayanmohammadian9@gmail.com" target="_blank">
+              <img src="/InternetEngineering-MidtermProject/img/basil--gmail-outline.svg" alt="Email" title="Email"
+                class="transition-all grayscale-100 hover:grayscale-0 hover:scale-105">
+            </a>
+            <a href="https://github.com/shayyan97" target="_blank"><img src="/InternetEngineering-MidtermProject/img/mdi--github.svg" alt="GitHub"
+                title="GitHub" class="transition-all grayscale-100 hover:grayscale-0 hover:scale-105"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Team -->
+    <!-- Comments -->
+    <div class="w-[80%] h-fit mx-auto rounded-lg mt-16">
+      <h4 class="header">نظر مشتریان ما</h4>
+      <div id="keen-slider2" class="keen-slider mt-6">
+        <div
+          class="keen-slider__slide flex flex-col w-full h-64 border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500">
+          <div class="w-full flex max-sm:flex-col max-sm:items-center">
+            <div class="p-2">
+              <img src="/InternetEngineering-MidtermProject/img/mohammadSaadtmand.webp" alt="محمد سعادت مند" title="محمد سعادت مند">
+            </div>
+            <div class="flex flex-col justify-center mr-2">
+              <p class="text-xl font-dana-bold max-sm:text-center">محمد سعادتمند</p>
+              <p class="font-dana-light text-gray-500 max-sm:text-center">مرکز غواصی کیش</p>
+            </div>
+          </div>
+          <p class="font-dana-light text-center">
+            ما تجربه دو وب سایت با شرکت آدلین آذر فناور داشتیم که خوشبختانه این تجربیات مثبت بودند. همچنین در سال‌های
+            اخیر،
+            از خدمات پشتیبانی و سئو شرکت رسام استفاده کردیم و از این خدمات رضایت داریم. </p>
+        </div>
+        <div
+          class="keen-slider__slide flex flex-col w-full h-64 border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500 ">
+          <div class="w-full flex max-sm:flex-col max-sm:items-center">
+            <div class="p-2">
+              <img class="rounded-full" src="/InternetEngineering-MidtermProject/img/eghbalahmadi.webp" alt="اقبال احمدی" title="اقبال احمدی">
+            </div>
+            <div class="flex flex-col justify-center pt-1 mr-2">
+              <p class="text-xl font-dana-bold max-sm:text-center">اقبال احمدی</p>
+              <p class="font-dana-light text-gray-500 max-sm:text-center">کلینیک افق روشن</p>
+            </div>
+          </div>
+          <p class="font-dana-light text-center">
+            کلینیک افق روشن امروز یک وب‌سایت زیبا داره و این به خاطر همکاری با شرکت آدلین آذر فناور هست. وقتی برای
+            دیجیتال
+            مارکتینگ وقت و هزینه صرف کنیم، نتایج اون رو هم در کوتاه‌ مدت و بلند مدت می‌تونیم ببینیم. </p>
+        </div>
+        <div
+          class="keen-slider__slide flex flex-col w-full h-64 border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500">
+          <div class="w-full flex max-sm:flex-col max-sm:items-center">
+            <div class="p-2">
+              <img class="rounded-full" src="/InternetEngineering-MidtermProject/img/parisaHasanvali.webp" alt="پریسا حسن‌ولی" title="پریسا حسن‌ولی">
+            </div>
+            <div class="flex flex-col justify-center pt-1 mr-2">
+              <p class="text-xl font-dana-bold max-sm:text-center">پریسا حسن‌ولی</p>
+              <p class="font-dana-light text-gray-500 max-sm:text-center">گروه مهندسی تُکا</p>
+            </div>
+          </div>
+          <p class="font-dana-light text-center">
+            برای بهینه‌سازی شرکت مهندسی تُکا با شرکت آدلین آذر فناور همکاری کردیم. ابتدا وب‌سایت رو بازطراحی کردیم. از
+            آنجایی که فرآیند بازطراحی مورد تایید بود، همکاری خود را در سایر زمینه‌ها مانند سئو ادامه دادیم. </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Comments -->
+    <!-- Join Form -->
+    <div class="w-[80%] h-fit mx-auto rounded-lg mt-16">
+      <h4 class="header">به تیم ما بپیوندید</h4>
+      <form class="flex flex-col mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="flex flex-col gap-8 p-4 items-center">
+            <input id="firstName" type="text" class="inputStyles" placeholder="نام">
+            <input id="phoneNumber" type="text" class="inputStyles" placeholder="شماره موبایل">
+            <input type="text" id="office" class="inputStyles" placeholder="نام شرکت">
+          </div>
+          <div class="flex flex-col gap-8 items-center p-4">
+            <input id="lastName" type="text" class="inputStyles" placeholder="نام خانوادگی">
+            <input id="email" type="text" class="inputStyles" placeholder="آدرس ایمیل">
+            <select class="inputStyles">
+              <option value="null">نوع درخواست</option>
+              <option value="1">درخواست</option>
+              <option value="2">درخواست</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex justify-center items-center p-4">
+          <textarea id="request" class="w-[98%] px-4 py-2 text-lg font-dana-light border rounded-lg resize-none"
+            placeholder="متن درخواست" rows="4"></textarea>
+        </div>
+        <div class="p-4">
+          <p class="hint" id="hint"></p>
+        </div>
+        <button id="submitBtn" type="button"
+          class="mx-auto w-72 p-2 text-white transition-all bg-sky-500 hover:bg-sky-600 border border-black rounded-lg cursor-pointer">ثبت
+          درخواست</button>
+      </form>
+    </div>
+    <!-- End Join Form -->
+    <!-- Footer -->
+    <div class="w-full grid grid-cols-3 max-lg:grid-cols-1 max-lg:gap-12 mt-12 bg-gray-400 p-4">
+      <div class="flex flex-col items-center gap-6 h-full">
+        <a href="./index.html" class="flex gap-4 justify-start items-center cursor-pointer">
+          <img src="/InternetEngineering-MidtermProject/img/logo.png" alt="لوگو" class="size-9">
+          <p class="text-2xl font-dana-bold text-white pt-3">شرکت آدلین آذر فناور</p>
+        </a>
+        <div class="grid grid-cols-3 w-fit gap-4 mx-auto">
+          <a href="#">
+            <img src="/InternetEngineering-MidtermProject/img/devicon--linkedin.svg" alt="Linkedin" title="Linkedin" class="size-10">
+          </a>
+          <a href="#">
+            <img src="/InternetEngineering-MidtermProject/img/basil--gmail-outline.svg" alt="Email" title="Email" class="size-10">
+          </a>
+          <a href="#"><img src="/InternetEngineering-MidtermProject/img/mdi--github.svg" alt="GitHub" title="GitHub" class="size-10"></a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 items-center" id="communication">
+        <div>
+          <p class="font-dana-bold text-xl text-white">راه های ارتباطی</p>
+        </div>
+        <div class="flex items-start gap-2 justify-center">
+          <p class="text-white">آدرس:</p>
+          <p class="text-white font-dana-light">همدان- پارک علم و فناوری - واحد۴۲۱</p>
+        </div>
+        <div class="flex items-start gap-2 justify-center">
+          <p class="text-white">تلفن همراه:</p>
+          <a class="text-white font-dana-light" href="tel:0936-251-7415">0936-251-7415</a>
+        </div>
+        <div class="flex items-start gap-2 justify-center">
+          <p class="text-white">تلفن:</p>
+          <a class="text-white font-dana-light" href="tel:081-36574914">081-36574914</a>
+        </div>
+        <div class="flex items-start gap-2 justify-center">
+          <p class="text-white">ایمیل:</p>
+          <a class="text-white font-dana-light"
+            href="mailto:adlinazarfanavaroffice@gmail.com">adlinazarfanavaroffice@gmail.com</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 items-center">
+        <div>
+          <p class="font-dana-bold text-xl text-white text-center">عضویت در خبرنامه</p>
+        </div>
+        <div class="flex gap-1">
+          <input type="text" class="inputStyles bg-white w-64! border-black" placeholder="ایمیل شما">
+          <button type="button"
+            class="transition-all bg-teal-400 hover:bg-teal-500 text-white border rounded-lg p-2 cursor-pointer border-black">عضویت</button>
+        </div>
+        <div class="p-2">
+          <p class="font-dana-light text-sm text-white text-center">با عضویت در خبرنامه ما از آخرین اخبار و اطلاعیه ها
+            شرکت با خبر شوید.</p>
+        </div>
+      </div>
+    </div>
+    <!--  End Footer-->
+</body>
+
+</html>
