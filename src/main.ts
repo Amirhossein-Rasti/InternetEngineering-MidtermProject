@@ -42,10 +42,27 @@ document.addEventListener("DOMContentLoaded", () => {
     var slider2 = new KeenSlider("#keen-slider2", {
         loop: true,
         mode: "free-snap",
-        slides: {
-            perView: 2,
-            spacing: 15,
-        },
+        breakpoints:{
+            '(min-width: 400px)':{
+                slides:{
+                    perView: 1,
+                    spacing: 15
+                }
+            },
+            '(min-width: 600px)':{
+                slides:{
+                    perView: 2,
+                    spacing: 15
+                }
+            },
+            '(min-width: 1300px)':{
+                slides:{
+                    perView: 3,
+                    spacing: 15
+                }
+            },
+
+        }
     }); //Second slider
 
     const counterSection = document.getElementById("counterSection");

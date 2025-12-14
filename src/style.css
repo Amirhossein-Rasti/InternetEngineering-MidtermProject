@@ -84,3 +84,6 @@ body {
 .header{
     @apply font-dana-exBold text-center text-2xl;
 }
+.inputStyles{
+    @apply w-[98%] px-4 py-2 text-lg font-dana-light border rounded-lg;
+}

@@ -259,7 +259,7 @@
       <h4 class="header">نظر مشتریان ما</h4>
       <div id="keen-slider2" class="keen-slider mt-6">
         <div
-          class="keen-slider__slide flex flex-col w-full h-fit border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500">
+          class="keen-slider__slide flex flex-col w-full h-64 border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500">
           <div class="w-full flex max-sm:flex-col max-sm:items-center">
             <div class="p-2">
               <img src="./public/img/mohammadSaadtmand.webp" alt="محمد سعادت مند" title="محمد سعادت مند">
@@ -275,7 +275,7 @@
             از خدمات پشتیبانی و سئو شرکت رسام استفاده کردیم و از این خدمات رضایت داریم. </p>
         </div>
         <div
-          class="keen-slider__slide flex flex-col w-full h-fit border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500 ">
+          class="keen-slider__slide flex flex-col w-full h-64 border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500 ">
           <div class="w-full flex max-sm:flex-col max-sm:items-center">
             <div class="p-2">
               <img class="rounded-full" src="./public/img/eghbalahmadi.webp" alt="اقبال احمدی" title="اقبال احمدی">
@@ -291,7 +291,7 @@
             مارکتینگ وقت و هزینه صرف کنیم، نتایج اون رو هم در کوتاه‌ مدت و بلند مدت می‌تونیم ببینیم. </p>
         </div>
         <div
-          class="keen-slider__slide flex flex-col w-full h-fit border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500">
+          class="keen-slider__slide flex flex-col w-full h-64 border border-gray-500 rounded-lg justify-start items-start gap-4 p-3 divide-y divide-gray-500">
           <div class="w-full flex max-sm:flex-col max-sm:items-center">
             <div class="p-2">
               <img class="rounded-full" src="./public/img/parisaHasanvali.webp" alt="پریسا حسن‌ولی"
@@ -309,6 +309,33 @@
       </div>
     </div>
     <!-- End Comments -->
+    <!-- Join Form -->
+    <div class="w-[80%] h-fit mx-auto rounded-lg mt-16">
+      <h4 class="header">به تیم ما بپیوندید</h4>
+      <form class="flex flex-col mt-4">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="flex flex-col gap-8 p-4 items-center">
+            <input type="text" class="inputStyles" placeholder="نام">
+            <input type="text" class="inputStyles" placeholder="شماره موبایل">
+            <input type="text" class="inputStyles" placeholder="نام شرکت">
+          </div>
+          <div class="flex flex-col gap-8 items-center p-4">
+            <input type="text" class="inputStyles" placeholder="نام خانوادگی">
+            <input type="text" class="inputStyles" placeholder="آدرس ایمیل">
+            <select class="inputStyles">
+              <option value="null">نوع درخواست</option>
+              <option value="1">درخواست</option>
+              <option value="2">درخواست</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex justify-center items-center p-4">
+          <textarea class="w-[98%] px-4 py-2 text-lg font-dana-light border rounded-lg resize-none"
+            placeholder="متن درخواست" rows="4"></textarea>
+        </div>
+      </form>
+    </div>
+    <!-- End Join Form -->
     <script type="module" src="/src/main.ts"></script>
 </body>
 
