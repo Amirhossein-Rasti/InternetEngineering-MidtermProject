@@ -87,3 +87,6 @@ body {
 .inputStyles{
     @apply w-[98%] px-4 py-2 text-lg font-dana-light border rounded-lg;
 }
+.hint{
+    @apply text-sm font-dana-bold text-red-800;
+}

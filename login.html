@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/logo.png" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>ورود به پنل خدمات</title>
+</head>
+
+<body>
+    <div class="w-full h-screen flex justify-center items-center">
+        <div
+            class="w-80 h-fit border-2 border-black flex flex-col gap-5 justify-center items-center p-4 rounded-lg bg-[#FFAF87]">
+            <div class="border-b border-white w-full">
+                <h2 class="font-dana-bold text-center pb-2 text-white">ورود به پنل خدمات</h2>
+            </div>
+            <div class="w-full flex flex-col gap-4">
+                <input id="username" type="text" placeholder="نام کاربری"
+                    class="w-full border-2 border-black rounded-lg px-3 py-2 bg-white">
+                <input id="password" type="text" placeholder="رمز عبور"
+                    class="w-full border-2 border-black rounded-lg px-3 py-2 bg-white">
+                <div class="flex justify-start items-center gap-2">
+                    <input type="checkbox" id="rememberMe" class="accent-teal-500">
+                    <label for="rememberMe" class="text-white text-sm">مرا به خاطر داشته باش</label>
+                </div>
+                <p class="hint text-xs! hidden" id="hint">* کاربری با نام کاربری و رمزعبور واردشده پیدا نشد!</p>
+            </div>
+            <button id="submitBtn" type="button"
+                class="w-full p-2 text-white cursor-pointer disabled:cursor-not-allowed disabled:opacity-75 transition-all bg-teal-400 hover:bg-teal-500 rounded-lg border-2 border-black">ورود</button>
+        </div>
+    </div>
+    <script src="/src/login.ts"></script>
+</body>
+
+</html>
