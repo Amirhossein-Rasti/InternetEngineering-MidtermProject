@@ -76,10 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (entry.isIntersecting && !counted) {
                     const interval1 = setInterval(() => {
                         workHours!.innerHTML = `${+workHours!.innerHTML + 1}`;
-                        if (+workHours!.innerHTML > 406) {
+                        if (+workHours!.innerHTML > 315) {
                             clearInterval(interval1);
                         }
-                    }, 2);
+                    }, 1);
 
                     const interval2 = setInterval(() => {
                         successfulProject!.innerHTML = `${+successfulProject!.innerHTML + 1}`;
