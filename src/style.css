@@ -1,19 +1,19 @@
 @import "tailwindcss";
 @font-face {
     font-family: danaMed;
-    src: url(./../public/fonts/dana-medium.woff);
+    src: url(/fonts/dana-medium.woff);
 }
 @font-face {
     font-family: danaBold;
-    src: url(./../public/fonts/dana-bold.woff);
+    src: url(/fonts/dana-bold.woff);
 }
 @font-face {
     font-family: danaExBold;
-    src: url(./../public/fonts/dana-extrabold.woff);
+    src: url(/fonts/dana-extrabold.woff);
 }
 @font-face {
     font-family: danaLight;
-    src: url(./../public/fonts/dana-light.woff);
+    src: url(/fonts/dana-light.woff);
 }
 @theme {
     --font-dana-med: danaMed;
@@ -63,19 +63,13 @@ body {
 
 .no-slide1 {
     width: 400px;
-    /* background-image: url("./../public/img/slide1.jpg"); */
-    /* background-size: 100% 500px; */
 }
 .no-slide2 {
-    /* background-image: url("./../public/img/slider4.jpg"); */
     width: 400px;
-    /* background-size: 100% 500px; */
 }
 
 .no-slide3 {
     width: 400px;
-    /* background-image: url("./../public/img/slider3.webp"); */
-    /* background-size: 100% 500px; */
 }
 
 .service-card{

@@ -205,5 +205,5 @@ function clearForm() {
 }
 
 function navigationToLoginForm(){
-    window.open('./../login.html');
+    window.open('./login.html');
 }

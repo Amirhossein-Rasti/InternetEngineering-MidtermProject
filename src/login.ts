@@ -20,7 +20,7 @@ function login() {
         return user.username == usernameInput.value && user.password == passwordInput.value;
     });
     if (user) {
-        window.open("./../index.html");
+        window.open("./index.html");
     } else {
         hint.classList.remove("hidden");
         setTimeout(() => {
